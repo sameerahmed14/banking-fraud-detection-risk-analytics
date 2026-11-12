@@ -1,0 +1,10 @@
+﻿.venv/
+data/raw/
+data/processed/
+outputs/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+*.joblib
+*.parquet

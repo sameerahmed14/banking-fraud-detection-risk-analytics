@@ -1,0 +1,9 @@
+transaction_type,balance_pattern,transactions,fraud_cases,fraud_rate_pct,fraud_transaction_value
+CASH_OUT,Entire prior balance,4075,4075.0,100.0,5983699208.41
+CASH_OUT,Zero prior balance,1025799,37.0,0.0036,4924306.92
+CASH_OUT,Exceeds prior balance,955339,3.0,0.0003,536665.68
+CASH_OUT,Partial prior balance,252287,1.0,0.0004,42062.82
+TRANSFER,Entire prior balance,3943,3943.0,100.0,4594184431.6
+TRANSFER,Partial prior balance,21454,149.0,0.6945,1468294793.7
+TRANSFER,Zero prior balance,282783,4.0,0.0014,4610763.76
+TRANSFER,Exceeds prior balance,224729,1.0,0.0004,123194.95

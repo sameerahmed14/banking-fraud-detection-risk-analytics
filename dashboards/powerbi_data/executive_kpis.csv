@@ -1,0 +1,2 @@
+total_transactions,fraud_transactions,legitimate_transactions,fraud_rate_pct,existing_flagged_transactions,fraud_transaction_value
+6362620,8213,6354407,0.1291,16,12056415427.84
