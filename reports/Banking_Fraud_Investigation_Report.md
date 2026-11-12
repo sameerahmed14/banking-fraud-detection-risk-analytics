@@ -31,22 +31,22 @@ The analysis aimed to:
 - Quantify false-positive workload, missed fraud and the impact of allocating investigator capacity across days.
 - Communicate uncertainty, data limitations and proposed next steps through a four-page Power BI report.
 
-**Dataset context:** PaySim is a synthetic **mobile-money** simulation; it does not contain transactions from the user's or an actual bank's customer accounts. The field \`step\` represents a simulated hour. Amounts have no independently verified physical currency in this investigation.
+**Dataset context:** PaySim is a synthetic **mobile-money** simulation; it does not contain transactions from the user's or an actual bank's customer accounts. The field `step` represents a simulated hour. Amounts have no independently verified physical currency in this investigation.
 
 ## 2. Data audit and definitions
 
 | Audit measure | Result |
 |---|---:|
 | Rows | 6,362,620 |
-| Labelled fraud (\`isFraud = 1\`) | 8,213 |
-| Labelled legitimate (\`isFraud = 0\`) | 6,354,407 |
+| Labelled fraud (`isFraud = 1`) | 8,213 |
+| Labelled legitimate (`isFraud = 0`) | 6,354,407 |
 | Fraud prevalence | 0.1291% |
-| \`isFlaggedFraud = 1\` | 16 |
+| `isFlaggedFraud = 1` | 16 |
 | Null or negative amount rows | 0 |
 | Simulated steps | 1–743 |
 | Dataset columns | 11 |
 
-**Definitions:** Fraud rate = labelled fraud transactions / total transactions in the relevant group. Fraud-associated value = sum of simulated transaction amounts where \`isFraud = 1\`. Precision = true fraud alerts / all alerts. Recall = true fraud alerts / all labelled fraud. False positives are legitimate transactions incorrectly alerted; false negatives are labelled fraud not alerted.
+**Definitions:** Fraud rate = labelled fraud transactions / total transactions in the relevant group. Fraud-associated value = sum of simulated transaction amounts where `isFraud = 1`. Precision = true fraud alerts / all alerts. Recall = true fraud alerts / all labelled fraud. False positives are legitimate transactions incorrectly alerted; false negatives are labelled fraud not alerted.
 
 ## 3. Exploratory findings
 
